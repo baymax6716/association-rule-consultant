@@ -24,6 +24,16 @@ Use $association-rule-consultant to analyze [my dataset] for [my decision questi
 
 Attach the data file and state the decision you are trying to make. The Skill inspects the data before asking only the questions that could materially change the analysis.
 
+## Try the included demonstration
+
+The repository includes a synthetic café transaction dataset, a worked report, and a Traditional Chinese presentation guide in [examples/](examples/). After installing the Skill, attach `examples/cafe_transactions.csv` and use this prompt:
+
+```text
+Use $association-rule-consultant to analyze cafe_transactions.csv. I manage a small café and want to decide which items to test as bundles. Produce a plain-language consulting report and clearly distinguish association from causation.
+```
+
+The expected report structure and checked metrics are in `examples/cafe-demo-report.md`; use them to explain the workflow, not as a benchmark that all real datasets should reproduce.
+
 ## How the Skill is designed
 
 The central design choice is a **consultation gate**. It prevents a common failure in unsupervised learning: treating every table as though it were a market-basket dataset. The gate checks the unit of analysis, basket definition, item definition, and intended decision. It then either proceeds, performs a documented transformation, or recommends a better method.

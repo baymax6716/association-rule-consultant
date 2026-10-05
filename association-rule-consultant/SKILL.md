@@ -38,3 +38,7 @@ End with prioritized next actions that distinguish a low-risk pilot from an obse
 ## Communication standard
 
 Write the executive summary for a reader with no statistical background. Define each unavoidable term beside its first use, use counts as well as percentages, and make uncertainty visible. Preserve the user’s language in the report when practical. The technical appendix may be more formal, but must remain traceable to the data and decisions described above.
+
+## Demonstrations
+
+When the user is learning, presenting, or asks for a worked example, use the self-contained café dataset and walkthrough in [examples/README.md](examples/README.md). Identify it as synthetic teaching data, keep its results separate from real findings, and use it to demonstrate the consultation gate before showing rule metrics.
