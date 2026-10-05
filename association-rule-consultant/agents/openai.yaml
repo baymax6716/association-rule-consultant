@@ -1,0 +1,6 @@
+interface:
+  display_name: "Association Rule Consultant"
+  short_description: "Association rules with a clear consulting report"
+  default_prompt: "Use $association-rule-consultant to assess my data, mine appropriate association rules, and prepare a plain-language consulting report."
+policy:
+  allow_implicit_invocation: true
